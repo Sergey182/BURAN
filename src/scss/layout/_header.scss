@@ -1,0 +1,187 @@
+// Верхнее меню в хэдере
+
+.header__top {
+    background-color: $bg-color;
+}
+
+.header__top-wrap {
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__top-auth {
+    display: flex;
+}
+
+.account {
+    width: 22px;
+    height: 22px;
+
+    fill: white;
+
+    cursor: pointer;
+}
+
+.top-items {
+    display: flex;
+    flex-wrap: wrap;
+
+    & li {
+        padding-right: 1.2rem;
+    }
+}
+
+.top-items a,
+.header__top-auth a {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    @include adaptive-font(14, 10);
+}
+
+.header__bottom-auth-enter span{
+    padding-left: 0.5rem;
+}
+
+
+
+// Среднее меню в хэдере
+
+.header__mid-wrap {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__mid-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    & span {
+        @include adaptive-font(30, 24);
+        padding-left: 10px;
+        color: $logo-color;
+    }
+}
+
+.logo {
+    width: 50px;
+
+    & img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.heart,
+.basket
+ {
+    width: 26px;
+    height: 26px;
+}
+
+.find {
+    width: 22px;
+    height: 22px;
+}
+
+.header__mid-items {
+    display: flex;
+}
+
+.items__wrap-heart {
+    position: relative;
+    padding-right: 20px;
+
+    & span {
+        top: -10px;
+        right: 7px;
+    }
+}
+
+.items__wrap-basket {
+    position: relative;
+
+     & span {
+         top: -10px;
+         right: -12px;
+     }
+}
+
+.sum {
+    position: absolute;
+    width: 23px;
+    background-color: #97D413;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+}
+
+
+
+// find form start
+.header-mid__find-form {
+    position: relative;
+}
+
+.header-mid__find-form input {
+    width: 100%;
+    height: 42px;
+    padding: 0 2.5rem 0 1rem;
+    border: 1px solid #B2B2B2;
+    border-radius: 30px;
+    outline: none;
+    background: transparent;
+}
+
+.header-mid__find-form button {
+    position: absolute;
+    height: 42px;
+    width: 42px;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+// find form end
+
+
+// Нижнее меню в хэдере
+
+.header__bottom {
+    width: 100%;
+    height: 50px;
+
+    background-color: $secondary-color;
+}
+
+
+.header__bottom-nav-items {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+        color: white;
+        @include adaptive-font(12, 10);
+    }
+}

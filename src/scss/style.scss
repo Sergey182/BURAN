@@ -1,0 +1,34 @@
+// Переменные, миксины, шрифты и т.д
+@import "./helpers/reset";
+@import "./helpers/normalize";
+@import "./helpers/mixin";
+@import "fonts";
+@import "./helpers/variables";
+@import "./helpers/container";
+
+
+
+// Подключение секций 
+
+@import "./layout/header";
+
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    @include adaptive-font(16, 12);
+}
+
+
+
