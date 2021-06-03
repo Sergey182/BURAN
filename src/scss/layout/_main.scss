@@ -1,7 +1,12 @@
+.main__wrap {
+    width: 100%;
+}
+
 .main__wrap-img {
+    position: relative;
     width: 100%;
     height: auto;
-    position: absolute;
+
     z-index: -1;
     & img {
         width: 100%;
@@ -19,7 +24,11 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 8% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 
     &__title {
          @include adaptive-font(75, 25);
@@ -46,5 +55,9 @@
         border-radius: 30px;
         background-color: $logo-color;
         cursor: pointer;
+
+        &:hover {
+            background-color: rgb(253, 66, 66);
+        }
     }
 }
